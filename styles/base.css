@@ -33,5 +33,16 @@ main{
         margin: 10px 0;
     }
     
-  
+    header nav a {
+        text-decoration: none;
+        padding: 10px;
+        color: #000;
+        transition: color 0.3s ease, background-color 0.3s ease;
+    }
+    
+    header nav a:hover {
+        background-color: lightblue;
+        color: white;
+        border-radius: 5px;
+    }
  }
