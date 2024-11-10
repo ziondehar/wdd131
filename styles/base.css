@@ -25,6 +25,7 @@ main{
     flex-grow:1 ; 
     padding: 1rem;
     text-align: center;
+    max-width: fit-content;
 }
  header nav a{
     header nav {
