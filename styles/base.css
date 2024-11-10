@@ -27,6 +27,14 @@ main{
     text-align: center;
     max-width: fit-content;
 }
+.image-container{
+    max-width: 100%;
+    overflow: hidden;
+}   
+.image-container img {
+    max-width: 100%;
+    height: auto;
+}
 
 img {
     max-width: 100%; 
