@@ -35,6 +35,7 @@
         <h2>Western Australia</h2>
         <p>Perth is the capital city of Western Australia and home to 2.6 million people. It attracts an estimated 2.24 million visitors from interstate and overseas each year (March 2016). Perth city lies at the heart of Greater Perth, which is home to just over two million people or 77 per cent of the state's population.</p>
         <img src="images/images.png" alt="Australia Flag">
+        
         <aside class="Resources">
         <h2>Web Dev Resources</h2>
         <ul>
@@ -50,8 +51,11 @@
        
     </main>
     <footer>Footer Content
-        <p>©<span id="currentYear"></span> Zion Dehar #get j.s for date <span id="Australia">Western Australia</span></p>
-
+        <p>©<span id="currentYear"></span> Zion Dehar -  Western Australia</p>
+        <script>
+            const currentYear = new Date().getFullYear();
+            document.getElementById("currentYear").textContent = currentYear;
+        </script>
         <p>Last Modified: <span id="lastModified"></span></p>
         <script>
             let text = document.lastModified;
