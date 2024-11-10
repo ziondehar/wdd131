@@ -29,10 +29,17 @@ main{
 }
 .card{
     background-color: antiquewhite;
+    padding: 1rem;
+    border-radius: 5px;
+    margin-bottom: 1rem;
+    grid-column: 1;
 
 }
 .resources{
-    background-color: antiquewhite;
+    background-color:  antiquewhite;
+    padding: 1rem;
+    border-radius: 5px;
+    grid-column: 2;
 }
 
  nav {
