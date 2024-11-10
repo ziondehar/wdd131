@@ -22,11 +22,8 @@ main{
     display: grid;
     grid-template-columns: 2fr 1fr;
     gap: 1rem;
-    flex-grow:1 ; 
     padding: 1rem;
     text-align: center;
-    padding: 1rem;
-    max-width: 1000px;
     margin: 0 auto;
     align-items: start;
     text-align: left;
