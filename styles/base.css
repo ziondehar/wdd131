@@ -27,27 +27,29 @@ main{
     text-align: center;
     max-width: fit-content;
 }
- header nav a{
-    header nav {
-        display: flex;
-        gap: 20px;
-        justify-content: center;
-        margin: 10px 0;
-    }
-    
-    header nav a {
-        text-decoration: none;
-        padding: 10px;
-        color: #000;
-        transition: color 0.3s ease, background-color 0.3s ease;
-    }
-    
-    header nav a:hover {
-        background-color: lightblue;
-        color: white;
-        border-radius: 5px;
-    }
-    .active {
-        color: yellow;
-    }
- }
+
+ nav {
+	background-color: #36454f;
+	margin: 0 auto;
+	max-width:fit-content;
+}
+nav ul {
+    display: flex;
+	list-style-type: none;
+    gap: 1rem;
+}
+nav a {
+	color: #fff;
+	text-align: center;
+	padding: 1rem;
+	text-decoration: none;
+}
+
+nav a:hover {
+	text-decoration:overline;
+}
+
+.active {
+	color: yellow;
+}
+ 
