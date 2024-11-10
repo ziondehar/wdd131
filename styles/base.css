@@ -27,6 +27,11 @@ main{
     text-align: center;
     max-width: fit-content;
 }
+
+img {
+    max-width: 100%; 
+    height: auto; 
+}
 .card{
     background-color: antiquewhite;
     padding: 1rem;
