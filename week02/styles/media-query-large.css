@@ -69,3 +69,22 @@
       font-weight: 900;
       font-style: italic;
     }
+
+header,main,footer{
+  max-width: 600px;
+  margin:1rem auto;
+  border: 1px solid lightgrey;
+  padding: 1rem;
+  background-color: aqua;
+}
+
+
+main{
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 1rem;
+}
+section{
+  padding:1rem;
+  background-color: aliceblue;
+}
