@@ -93,6 +93,7 @@ section{
 {header{
   background-color: black;
   color: white;
+  grid-template-columns: 1fr 1fr;
 }
 }
 
