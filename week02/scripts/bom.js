@@ -10,7 +10,7 @@ button.addEventListener('click', () => {
         return;
     }
 
-    const listItem = document.createElement('li');
+  const listItem = document.createElement('li');
     listItem.textContent = chapter;
 
     const deleteButton = document.createElement('button');
