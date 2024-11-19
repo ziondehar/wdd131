@@ -5,7 +5,7 @@
     box-sizing: border-box;
   }
   .navbar {
-    background-color: #7f35d9;
+    background-color: #d1820b;
     color: white;
     display: flex;
     justify-content: space-between;
@@ -80,7 +80,7 @@
   footer {
     text-align: center;
     padding: 10px 20px;
-    background-color: #7f35d9;
+    background-color: #d1820b;
     color: white;
   }
   @media (max-width: 768px) {
