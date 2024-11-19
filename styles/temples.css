@@ -105,6 +105,7 @@
     color: white;
     font-size: 1em;
   }
+
   
   .hamburger-menu {
     display: none;
@@ -159,5 +160,23 @@
     .gallery {
       grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); 
     }
+    
+        .hamburger-menu {
+          display: block;
+        }
+        .nav-links {
+          display: none;
+          flex-direction: column;
+          position: absolute;
+          top: 50px;
+          right: 20px;
+          background-color: #d1820b;
+          padding: 10px;
+          border-radius: 5px;
+        }
+        .nav-links.show {
+          display: flex;
+        }
+      
   }
   
