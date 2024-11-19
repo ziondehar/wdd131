@@ -7,12 +7,12 @@
   
   body {
     font-family: Arial, sans-serif;
-    background-color: #f4f44;
+    background-color: #f1f1e2;
     color: #333;
   }
   
   
-  .gallery 
+  .gallery{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); 
     gap: 20px;
@@ -37,13 +37,13 @@
     border-radius: 5px;
     display: block; 
     margin: 0 auto; 
-  
+  }
  
   .gallery-item p {
     margin-top: 10px;
     font-size: 14px;
     color: #666;
-  
+  }
   
  
   media (max-width: 768px) {
