@@ -1,0 +1,54 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: boder-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f44;
+    color: #333;
+  }
+  
+  
+  .gallery 
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); 
+    gap: 20px;
+    padding: 20px; 
+  }
+  
+ 
+  .galleryitem {
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    text-align: center;
+    padding: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+  }
+  
+ 
+  .gallery-item img {
+    width: 100%; 
+    max-width: 300px; 
+    height: auto; 
+    border-radius: 5px;
+    display: block; 
+    margin: 0 auto; 
+  
+ 
+  .gallery-item p {
+    margin-top: 10px;
+    font-size: 14px;
+    color: #666;
+  
+  
+ 
+  media (max-width: 768px) {
+    .gallery {
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); 
+    }
+  }
+  
