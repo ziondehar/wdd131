@@ -17,7 +17,9 @@ marquee {
 h1 {
 	border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 }
-
+h2{
+    align-content: left;
+}
 main {
 	display: grid;
 }
@@ -32,6 +34,7 @@ article p {
 }
 
 .callout {
+    padding: 1rem;
 	color: #777;
 	background-color: #702963;
 }
