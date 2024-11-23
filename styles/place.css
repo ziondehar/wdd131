@@ -1,80 +1,107 @@
-/* General Reset */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-  }
-  
-  body {
+}
+
+body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
-  }
-  
-  header {
+}
+
+header {
     text-align: center;
     background: #f4f4f4;
     padding: 1rem;
     border-bottom: 2px solid #ccc;
-  }
-  
-  header h1 {
+}
+
+header h1 {
     font-size: 2rem;
-  }
-  
-  main {
+}
+
+main {
     display: flex;
     flex-wrap: nowrap;
     align-items: center;
     justify-content: space-between;
     padding: 1rem;
     gap: 1rem;
-  }
-  
-  .data, .weather-image {
+}
+
+.data, .weather-image {
     width: 20%;
     background: #2f15c4;
     padding: 1rem;
     border: 2px solid #ccc;
     color: #ccc;
-  }
-  
-  .data h2, .weather-image h2 {
+}
+
+.data h2, .weather-image h2 {
     margin-bottom: 1rem;
     text-align: center;
     font-size: 1.5rem;
-  }
-  
-  .data ul, .weather-image ul {
+}
+
+.data ul, .weather-image ul {
     list-style: none;
-  }
-  
-  .data li, .weather-image li {
+}
+
+.data li, .weather-image li {
     display: flex;
     justify-content: space-between;
     margin: 0.5rem 0;
-  }
-  
-  .label {
+}
+
+.label {
     font-weight: bold;
-  }
-  
-  .image-section {
+}
+
+.image-section {
     flex-grow: 1;
     display: flex;
     justify-content: center;
     align-items: center;
-  }
-  
-  .image-section img {
+}
+
+.image-section img {
     max-width: 100%;
     height: auto;
     border: 2px solid #2f15c4;
-  }
-  
-  footer {
+}
+
+footer {
     text-align: center;
     padding: 1rem;
     background: #2f15c4;
     color: #fff;
-  }
-  
+}
+
+@media (max-width: 768px) {
+    main {
+        flex-wrap: wrap;
+        flex-direction: column;
+        gap: 0;
+    }
+
+    .data, .weather-section, .image-section {
+        width: 100%;
+        margin-bottom: 1rem;
+    }
+
+    .data, .weather-section {
+        padding: 1rem;
+        text-align: center;
+    }
+
+    .weather-image {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .weather-image img {
+        width: 50%;
+        margin-bottom: 1rem;
+    }
+}
