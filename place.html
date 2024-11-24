@@ -19,7 +19,13 @@
     <main>
         
           <section class="image-section">
-            <img src="images/wombat.webp" alt="Large Image">
+            <picture>
+              <source srcset="images/wombat-small.webp" media="(max-width: 500)">
+              <source srcset="images/wombat-medium" media="(max-width: 750)">
+              <source srcset="images/wombat-large.webp" media="(min-width: 1000)">
+              <img src="images/wombat-large.webp" alt="Large">
+            </picture>
+           
           </section>
           <section class="data">
             <h2>Data</h2>
