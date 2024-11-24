@@ -3,12 +3,88 @@
     padding: 0;
     box-sizing: border-box;
 }
-
+.roboto-thin {
+    font-family: "Roboto", serif;
+    font-weight: 100;
+    font-style: normal;
+  }
+  
+  .roboto-light {
+    font-family: "Roboto", serif;
+    font-weight: 300;
+    font-style: normal;
+  }
+  
+  .roboto-regular {
+    font-family: "Roboto", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .roboto-medium {
+    font-family: "Roboto", serif;
+    font-weight: 500;
+    font-style: normal;
+  }
+  
+  .roboto-bold {
+    font-family: "Roboto", serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+  
+  .roboto-black {
+    font-family: "Roboto", serif;
+    font-weight: 900;
+    font-style: normal;
+  }
+  
+  .roboto-thin-italic {
+    font-family: "Roboto", serif;
+    font-weight: 100;
+    font-style: italic;
+  }
+  
+  .roboto-light-italic {
+    font-family: "Roboto", serif;
+    font-weight: 300;
+    font-style: italic;
+  }
+  
+  .roboto-regular-italic {
+    font-family: "Roboto", serif;
+    font-weight: 400;
+    font-style: italic;
+  }
+  
+  .roboto-medium-italic {
+    font-family: "Roboto", serif;
+    font-weight: 500;
+    font-style: italic;
+  }
+  
+  .roboto-bold-italic {
+    font-family: "Roboto", serif;
+    font-weight: 700;
+    font-style: italic;
+  }
+  
+  .roboto-black-italic {
+    font-family: "Roboto", serif;
+    font-weight: 900;
+    font-style: italic;
+  }
+  
 body {
-    font-family: Arial, sans-serif;
+   
     line-height: 1.6;
 }
-
+:root {
+    --primary-color: #2f15c4;        
+    --highlight-color: #f39c12;     
+    --font-size-base: 16px;        
+    --spacing: 1rem;                
+}
 header {
     text-align: center;
     background: #f4f4f4;
@@ -59,6 +135,15 @@ main {
     display: block;
     text-align: center;
     margin-bottom: 0.5rem;
+}
+.weather-image::after {
+    content: "";
+    display: block;
+    width: 50%;
+    height: 4px;
+    background-color: var(--highlight-color);
+    margin: var(--spacing) auto 0;
+    border-radius: 2px;
 }
 
 
