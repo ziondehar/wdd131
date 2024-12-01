@@ -1,3 +1,3 @@
 let names = ['Nancy','Blessing','Jorge','Svetlana','Bob'];
 let namesB = names.filter(name => name.charAt(0) === 'B');
-console.log(NamesB)
+console.log(namesB)
