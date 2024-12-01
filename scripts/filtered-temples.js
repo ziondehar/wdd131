@@ -103,3 +103,9 @@ temples.forEach((temple) => {
   `;
   templeContainer.appendChild(templeCard);
 });
+
+const oldTemples = temples.filter(temple => new Date(temple.dedicated) < 1900);
+const newTemples = temples.filter(temple => new Date(temple.dedicated) > 2000);
+const largeTemples = temples.filter(temple => temple.area > 90000);
+const smallTemples = temples.filter(temple => temple.area < 10000);
+const homeTemples = temples;
