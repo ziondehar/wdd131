@@ -89,3 +89,17 @@ function toggleMenu() {
     }
   ];
   
+const templeContainer = document.getElementById("filtered-temples");
+
+temples.forEach((temple) => {
+  const templeCard = document.createElement("div");
+  templeCard.classList.add("temple-card");
+  templeCard.innerHTML = `
+    <img src="${temple.imageUrl}" alt="${temple.templeName}">
+    <h3>${temple.templeName}</h3>
+    <p><strong>Location:</strong> ${temple.location}</p>
+    <p><strong>Dedicated:</strong> ${temple.dedicated}</p>
+    <p class="area"><strong>Area:</strong> ${temple.area.toLocaleString()} sq ft</p>
+  `;
+  templeContainer.appendChild(templeCard);
+});
