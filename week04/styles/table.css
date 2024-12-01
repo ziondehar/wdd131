@@ -1,0 +1,45 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 20px;
+}
+
+table.feature-comparison {
+    width: 60%;
+    margin: 0 auto;
+    border-collapse: collapse;
+    border: 1px solid #ddd;
+    text-align: center;
+}
+
+.feature-comparison thead th {
+    background-color: black;
+    color: white;
+    padding: 10px;
+    border: 1px solid #ddd;
+}
+
+.feature-comparison tbody td {
+    padding: 10px;
+    border: 1px solid #ddd;
+}
+
+.feature-comparison .check {
+    color: purple;
+    font-weight: bold;
+}
+
+.feature-comparison .cross {
+    color: red;
+    font-weight: bold;
+}
+
+.alt-row {
+    background-color: #f9f9f9;
+}
+
+.caption {
+    font-style: italic;
+    margin-top: 10px;
+    font-size: 0.9em;
+}
