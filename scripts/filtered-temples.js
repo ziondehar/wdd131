@@ -61,5 +61,31 @@ function toggleMenu() {
       imageUrl:
       "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/mexico-city-mexico/400x250/mexico-city-temple-exterior-1518361-wallpaper.jpg"
     },
-    // Add more temple objects here...
+
+
+    {
+      templeName: "Adelaide Australia",
+      location: "Adelaide, Australia",
+      dedicated: "2000, June, 15",
+      area: 116642,
+      imageUrl:
+      "https://churchofjesuschristtemples.org/assets/img/temples/adelaide-australia-temple/adelaide-australia-temple-4359.jpg"
+    },
+    {
+      templeName: "Accra Ghana",
+      location: "Accra, Ghana",
+      dedicated: "2004, January, 11",
+      area: 17000,
+      imageUrl:
+      "https://churchofjesuschristtemples.org/assets/img/temples/accra-ghana-temple/accra-ghana-temple-5154.jpg"
+    },
+    {
+      templeName: "Abidjan Ivory Coast",
+      location: "Abidjan, Côte d'Ivoire",
+      dedicated: "Not Yet Dedicated",
+      area: 116642,
+      imageUrl:
+      "https://churchofjesuschristtemples.org/assets/img/temples/abidjan-ivory-coast-temple/abidjan-ivory-coast-temple-1108.jpg"
+    }
   ];
+  
