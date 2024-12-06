@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="Author" content="Zion Dehar">
+    <meta name="description" content="Form 2024">
+    <title>Form</title>
+</head>
+<body>
+    <main>
+        <h1>Course Proposal Application</h1>
+        <form method="get" action="review.html" class = "">
+            <fieldset>
+                <legend>Overall Rating</legend>
+                <label><input type="radio" name="star" value="one"></label>
+                <label><input type="radio" name="star" value="two"></label>
+                <label><input type="radio" name="star" value="three"></label>
+                <label><input type="radio" name="star" value="four"></label>
+                <label><input type="radio" name="star" value="five"></label>
+
+                <div>Software Needed</div>
+                <label><input type="checkbox" name="editing" value="yes">Photo editing</label>
+                <label><input type="checkbox" name="code" value="yes">Coding</label>
+                <label><input type="checkbox" name="process" value="yes">Pre-Processor</label>
+                <label><input type="checkbox" name="client" value="yes">Photo editing</label>
+            </fieldset>
+            <fieldset>
+                <legend>Funding</legend>
+                    <label>Anticipation Completion Date <input type="date" name="completeDate"></label>
+                    <label>Course Subject
+                        <select name="subject">
+                            <option value="">Please Select &#9662; </option>
+                            <option value="software">Software Creation</option>
+                            <option value="cyber">CyberSecurity</option>
+                            <option value="network">Networking</option>
+                            <option value="data">DataBase Engineering</option>
+                            <option value="web">Website Creation</option>
+                            <option value="app">Application Development</option>
+                            <option value="iot">Embedded Systems</option>
+                        </select>
+                    </label>
+                    <label>How many Authors <input type="number" name="authors"></label>
+                    
+            </fieldset>
+            <input type="submit" value= "Propose my course">
+
+        </form>
+    </main>
+</body>
+</html>
