@@ -5,47 +5,63 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="Author" content="Zion Dehar">
     <meta name="description" content="Form 2024">
-    <title>Form</title>
+    <script src="scripts/form.js"defer></script>
+    <link rel="stylesheet" href="styles/form.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <title>Product Review</title>
 </head>
 <body>
     <main>
         <h1>Course Proposal Application</h1>
         <form method="get" action="review.html" class = "">
             <fieldset>
-                <legend>Overall Rating</legend>
-                <label><input type="radio" name="star" value="one"></label>
-                <label><input type="radio" name="star" value="two"></label>
-                <label><input type="radio" name="star" value="three"></label>
-                <label><input type="radio" name="star" value="four"></label>
-                <label><input type="radio" name="star" value="five"></label>
-
-                <div>Software Needed</div>
-                <label><input type="checkbox" name="editing" value="yes">Photo editing</label>
-                <label><input type="checkbox" name="code" value="yes">Coding</label>
-                <label><input type="checkbox" name="process" value="yes">Pre-Processor</label>
-                <label><input type="checkbox" name="client" value="yes">Photo editing</label>
+                <label>Product Name
+                    <select name="subject">
+                        <option value="">Please Select a Product &#9662; </option>
+                        <option value="eggs">Eggs</option>
+                        <option value="chicken">Chicken</option>
+                        <option value="steak">Steak</option>
+                        <option value="fish">Fish</option>
+                        <option value="cookies">Cookies</option>
+                        <option value="ham">Ham</option>
+                        <option value="chips">Chips</option>
+                    </select>
+                </label>
             </fieldset>
             <fieldset>
-                <legend>Funding</legend>
-                    <label>Anticipation Completion Date <input type="date" name="completeDate"></label>
-                    <label>Course Subject
-                        <select name="subject">
-                            <option value="">Please Select &#9662; </option>
-                            <option value="software">Software Creation</option>
-                            <option value="cyber">CyberSecurity</option>
-                            <option value="network">Networking</option>
-                            <option value="data">DataBase Engineering</option>
-                            <option value="web">Website Creation</option>
-                            <option value="app">Application Development</option>
-                            <option value="iot">Embedded Systems</option>
-                        </select>
-                    </label>
-                    <label>How many Authors <input type="number" name="authors"></label>
+                <legend>Overall Rating</legend>
+                <label><input type="radio" name="star" value="one">	&#9734;</label>
+                <label><input type="radio" name="star" value="two">&#9734;&#9734;</label>
+                <label><input type="radio" name="star" value="three">&#9734;&#9734;&#9734;</label>
+                <label><input type="radio" name="star" value="four">&#9734;&#9734;&#9734;&#9734;</label>
+                <label><input type="radio" name="star" value="five">&#9734;&#9734;&#9734;&#9734;&#9734;</label>
+
+                <label>Consumed Date <input type="date" name="completeDate"></label>
+
+                <div>What did you find appealing about the Product</div>
+                <label><input type="checkbox" name="editing" value="yes">Delicious</label>
+                <label><input type="checkbox" name="code" value="yes">Beautiful</label>
+                <label><input type="checkbox" name="process" value="yes">Cheap</label>
+                <label><input type="checkbox" name="client" value="yes">Long lasting</label>
+            </fieldset>
+            <fieldset>
+                
+                <legend>Written Review <div class = "optional">(Optional)</div></legend>
+                <label><input type="text" name="review" placeholder="Write Here...."></label>
+                    
+                   
+                <label >First Name <div class = "optional">(Optional)</div> <input type="text" name="fname"></label>
                     
             </fieldset>
-            <input type="submit" value= "Propose my course">
+            <input type="submit" value= "Send my Review">
 
         </form>
     </main>
 </body>
+<footer>
+    <p>©<span id="Year"></span> Zion Dehar </p> 
+    <p>Last Updated<span id="lastmodified"></span></p> 
+</footer>
 </html>
