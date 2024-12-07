@@ -14,11 +14,11 @@
 </head>
 <body>
     <main>
-        <h1>Course Proposal Application</h1>
+        <h1>Product Review</h1>
         <form method="get" action="review.html" class = "">
             <fieldset>
                 <label>Product Name
-                    <select name="subject">
+                    <select name="subject" id="food" required>
                         <option value="">Please Select a Product &#9662; </option>
                         <option value="eggs">Eggs</option>
                         <option value="chicken">Chicken</option>
@@ -32,13 +32,13 @@
             </fieldset>
             <fieldset>
                 <legend>Overall Rating</legend>
-                <label><input type="radio" name="star" value="one">	&#9734;</label>
+                <label><input type="radio" name="star" value="one" required>	&#9734;</label>
                 <label><input type="radio" name="star" value="two">&#9734;&#9734;</label>
                 <label><input type="radio" name="star" value="three">&#9734;&#9734;&#9734;</label>
                 <label><input type="radio" name="star" value="four">&#9734;&#9734;&#9734;&#9734;</label>
                 <label><input type="radio" name="star" value="five">&#9734;&#9734;&#9734;&#9734;&#9734;</label>
 
-                <label>Consumed Date <input type="date" name="completeDate"></label>
+                <label>Consumed Date <input type="date" name="completeDate" id="date" required></label>
 
                 <div>What did you find appealing about the Product</div>
                 <label><input type="checkbox" name="editing" value="yes">Delicious</label>
@@ -49,7 +49,7 @@
             <fieldset>
                 
                 <legend>Written Review <div class = "optional">(Optional)</div></legend>
-                <label><input type="text" name="review" placeholder="Write Here...."></label>
+                <textarea name="Writereview" id="review" placeholder="Write Here...."></textarea>
                     
                    
                 <label >First Name <div class = "optional">(Optional)</div> <input type="text" name="fname"></label>
