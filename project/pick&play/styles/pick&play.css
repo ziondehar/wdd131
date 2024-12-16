@@ -1,0 +1,81 @@
+body {
+    background-color: #F5F5F5; 
+    font-family: 'Roboto', sans-serif; 
+    color: #333333; 
+}
+header {
+    background-color: #003366; 
+    color: #FFD700; 
+    text-align: center;
+    padding: 1em 0;
+}
+h1 {
+    font-family: 'Lora', serif;
+}
+button {
+    background-color: #FFD700;
+    color: #003366; 
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+footer {
+    background-color: #003366; 
+    color: #FFD700;
+    text-align: center;
+    padding: 1em 0;
+}
+.hamburger-menu {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 1.5em;
+    color: white;
+    cursor: pointer;
+  }
+  .nav-links {
+    display: flex;
+    gap: 15px;
+    list-style: none;
+  }
+  
+  .nav-links a {
+    text-decoration: none;
+    color: white;
+    font-size: 1em;
+  }
+  .navbar {
+    background-color: #d1820b;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+  }
+  .navbar-brand {
+    font-size: 1.5em;
+    font-weight: bold;
+  }
+
+  @media (max-width: 768px) {
+    .gallery {
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); 
+    }
+    
+        .hamburger-menu {
+          display: block;
+        }
+        .nav-links {
+          display: none;
+          flex-direction: column;
+          position: absolute;
+          top: 50px;
+          right: 20px;
+          background-color: #d1820b;
+          padding: 10px;
+          border-radius: 5px;
+        }
+        .nav-links.show {
+          display: flex;
+        }
+  }
