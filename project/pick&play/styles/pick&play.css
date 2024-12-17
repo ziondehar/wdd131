@@ -56,7 +56,59 @@ footer {
     font-size: 1.5em;
     font-weight: bold;
   }
+  
+  .gallery{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); 
+    gap: 20px;
+    padding: 20px; 
+  }
+  
+ 
+  .gallery-item {
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    text-align: center;
+    padding: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+  }
+  
+ 
+  .gallery-item img {
+    width: 100%; 
+    max-width: 300px; 
+    height: auto; 
+    border-radius: 5px;
+    display: block; 
+    margin: 0 auto; 
+  }
+ 
+  .gallery-item p {
+    margin-top: 10px;
+    font-size: 14px;
+    color: #666;
+  }
+  .card{
+    background-color: antiquewhite;
+    padding: 1rem;
+    border-radius: 5px;
+    margin-bottom: 1rem;
+    grid-column: 1;
+  }
+  .image-container{
+    max-width: 100%;
+    overflow: hidden;
+}   
+.image-container img {
+    max-width: 100%;
+    height: auto;
+}
 
+img {
+    max-width: 100%; 
+    height: auto; 
+}
   @media (max-width: 768px) {
     .gallery {
       grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); 
