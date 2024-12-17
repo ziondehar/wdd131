@@ -166,27 +166,79 @@ ul li a:hover {
     text-decoration: underline;
 }
 
-/* Style the list */
+/* Section Styling */
+section {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 20px 0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+section h2 {
+    color: #003366;
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+section article {
+    margin-bottom: 20px;
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+}
+
+section article:last-child {
+    border-bottom: none;
+}
+
+section h3 {
+    color: #0055a4;
+    font-size: 1.4rem;
+    margin-bottom: 5px;
+}
+
+section p {
+    color: #555;
+    line-height: 1.6;
+}
+
 ul {
-    list-style-type: disc; 
-    padding-left: 20px; 
-    margin-bottom: 15px;
+    list-style: none;
+    padding: 0;
 }
 
 ul li {
-    margin-bottom: 8px; 
-    font-family: 'Arial', sans-serif;
-    line-height: 1.5;
-    color: #333; 
+    border: 1px solid #e1e1e1;
+    border-radius: 5px;
+    margin: 10px 0;
+    padding: 10px 15px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    color: #333333;
 }
 
+ul li:hover {
+    transform: scale(1.02);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+ul li a {
+    color: #007BFF;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+ul li a:hover {
+    text-decoration: underline;
+    color: #ff4500;
+}
 
 li strong {
     font-size: 1.2rem;
-    color: #003366; 
+    color: #003366;
     margin-bottom: 5px;
-    display: inline-block;
-}
+    display: inline-block;}
   
   @media (max-width: 768px) {
     .gallery {
@@ -204,7 +256,19 @@ li strong {
         .nav-links.show {
           display: flex;
         }
-  }
+        section {
+            padding: 15px;
+        }
+    
+        section h2 {
+            font-size: 1.5rem;
+        }
+    
+        section h3 {
+            font-size: 1.2rem;
+        }
+    }
+  
 
   .roboto-thin {
     font-family: "Roboto", serif;
