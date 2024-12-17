@@ -151,6 +151,42 @@ form {
   input[type="submit"]:hover{
     background-image: linear-gradient(blue,red);
   }
+  ul li a {
+    display: inline-block;
+    text-decoration: none;
+    color: #007BFF; /* A nice blue color for links */
+    font-weight: bold;
+    padding: 5px 0;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+ul li a:hover {
+    color: #ff4500; 
+    transform: translateX(5px); 
+    text-decoration: underline;
+}
+
+/* Style the list */
+ul {
+    list-style-type: disc; 
+    padding-left: 20px; 
+    margin-bottom: 15px;
+}
+
+ul li {
+    margin-bottom: 8px; 
+    font-family: 'Arial', sans-serif;
+    line-height: 1.5;
+    color: #333; 
+}
+
+
+li strong {
+    font-size: 1.2rem;
+    color: #003366; 
+    margin-bottom: 5px;
+    display: inline-block;
+}
   
   @media (max-width: 768px) {
     .gallery {

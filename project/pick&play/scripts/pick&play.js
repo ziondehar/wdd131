@@ -8,7 +8,7 @@ function toggleMenu() {
  
 //Form
 const products = [
-    { id: "pp-1888", name: "Guiatar", averagerating: 4.5 },
+    { id: "pp-1888", name: "Guitar", averagerating: 4.5 },
     { id: "pp-2050", name: "Tutorials", averagerating: 4.7 },
     { id: "pp-1987", name: "Information", averagerating: 3.5 },
     { id: "pp-2000", name: "Reccomendation", averagerating: 3.9 },
