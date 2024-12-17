@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Pick&Play- Home page">
+    <link rel="stylesheet" href="styles/pick&play.css">
+    <script src="scripts/pick&play.js"></script>
+    <meta name="Author" content="Zion Dehar">
+    <title>Pick and Play Pathway</title>
+    
+</head>
+<body>
+   
+    <header>
+        
+        
+    <h1>Website Review</h1>
+    <form method="get" action="../../review.html" class = "review">
+        <fieldset>
+            <label>Website themes
+                <select name="subject" id="product-list" required>
+                    <option value="">Select &#9662; </option>
+                </select>
+            </label>
+        </fieldset>
+        <fieldset>
+            <legend>Overall Rating</legend>
+            <label><input type="radio" name="star" value="one" required>	&#9734;</label>
+            <label><input type="radio" name="star" value="two">&#9734;&#9734;</label>
+            <label><input type="radio" name="star" value="three">&#9734;&#9734;&#9734;</label>
+            <label><input type="radio" name="star" value="four">&#9734;&#9734;&#9734;&#9734;</label>
+            <label><input type="radio" name="star" value="five">&#9734;&#9734;&#9734;&#9734;&#9734;</label>
+
+            
+
+            <div>What did you find appealing about this website</div>
+            <label><input type="checkbox" name="editing" value="yes">Useful</label>
+            <label><input type="checkbox" name="code" value="yes">Looked amazing</label>
+            <label><input type="checkbox" name="process" value="yes">Cheap</label>
+            <label><input type="checkbox" name="client" value="yes">Long lasting</label>
+        </fieldset>
+        <fieldset>
+            
+            <legend>Written Review/ Questions </legend>
+            <textarea name="Questions" id="review" placeholder="Write Here...." required></textarea>
+                
+               
+            <label >First Name <div class = "optional">(Optional)</div> <input type="text" name="fname"></label>
+
+            <label>Date <input type="date" name="completeDate" id="date" required></label>
+                
+        </fieldset>
+        <input type="submit" value= "Send my Review">
+
+    </form>
+  
+    <footer>
+        <p>©<span id="Year"></span> Zion Dehar </p> 
+        <p>Last Updated<span id="lastmodified"></span></p> 
+    </footer>
+</body>
+</html>
+
+
