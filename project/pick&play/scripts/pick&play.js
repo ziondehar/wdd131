@@ -5,7 +5,7 @@ function toggleMenu() {
     const navLinks = document.querySelector('.nav-links');
     navLinks.classList.toggle('show');
   }
-
+ 
 //Form
 const products = [
     { id: "pp-1888", name: "Guiatar", averagerating: 4.5 },
